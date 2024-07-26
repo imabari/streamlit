@@ -9,7 +9,7 @@ import streamlit as st
 option = ["愛媛県", "四国中央", "西条", "今治", "松山市", "中予", "八幡浜", "宇和島"]
 
 
-@st.cache_data
+@st.cache_data(ttl=3600)
 def load_data():
     url = "https://www.pref.ehime.jp/site/kanjyo/39800.html"
 
